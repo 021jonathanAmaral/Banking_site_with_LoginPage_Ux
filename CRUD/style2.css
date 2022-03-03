@@ -1,0 +1,316 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-image: url(../img/nyc-aerial-view-of-new-york-city-at-night.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+
+
+#left{
+    margin-top: 80px;
+    width: 60%;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-top-left-radius: 50px ;
+    border-bottom-left-radius: 50px ;
+    
+    
+}
+
+#right{
+    margin-top: 80px;
+    width: 25%;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.63);
+    
+   
+}
+/* TOPO DO FORMULARIO*/
+.LOG{
+    width: 100%;
+    margin-left: 200px;
+}.LOG h1{
+    font-size: 50PX;
+    margin-bottom: 30PX;
+    margin-top: 1;
+    color: rgba(29, 29, 29, 0.726);
+
+    
+    
+   
+}
+
+
+
+
+/* controle dos formularios visualizados*/
+
+#part1_div.mudar{
+    display: none;
+}
+
+
+
+#part2_div{
+    display: none;
+}
+#part2_div.mudar{
+ display: inline;
+}
+
+
+#part3_div{
+    display: none;
+}
+#part3_div.mudar{
+    display: inline;
+}
+
+
+
+/*Efeitos de transições do modal*/
+@keyframes avanced_button {
+    0%{
+        transform: translateX(-390px);
+        
+    }
+
+    100%{
+        transform: translateY(0px);
+        
+    }
+}
+@keyframes return_button {
+    0%{
+        transform: translateX(390px);
+        
+    }
+
+    100%{
+        transform: translateY(0px);
+        
+    }
+}
+
+
+@keyframes avanced_left {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+@keyframes return_left {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+
+/*formularios*/
+
+#part1_div .form_div{
+    animation: return_left 1s  ease-in-out;
+}
+#part2_div .form_div{
+    animation: avanced_left 1s  ease-in-out;
+}
+#part3_div .form_div{
+    animation: avanced_left 1s  ease-in-out;
+}
+
+
+/* Botões */
+
+button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.363) 1px 1px 1px 1px;
+    font-family: sans-serif;
+    font-size: 15PX;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}button:HOVER{
+    background-color: rgba(141, 141, 141, 0.685);
+    margin-left: 1%;
+   
+}
+
+#part1_div #Button_next{
+    animation: return_button 1s ;
+
+}
+#Button_next{
+    
+    margin-left: 20%;
+    cursor: pointer;
+    
+}
+#Button_return{
+    cursor: pointer;
+}
+#part2_div #buttons{
+    display: flex;
+    gap: 0;
+    width: 100%;
+    margin-left: 200px;
+    animation: avanced_button 1s  ease-in-out;
+}
+#part3_div #buttons{
+    display: flex;
+    gap: 0;
+    width: 100%;
+    margin-left: 200px;
+    
+}
+
+
+
+#Button_next .login{
+    display: flex;
+    gap: 50px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.363) 1px 1px 1px 1px;
+    width: 170px;
+    height: 70px;
+    border-radius: 10px;
+   
+}#Button_next .login:hover{
+    background-color: rgba(141, 141, 141, 0.685);
+    border-radius: 10px;
+}
+
+#Button_return .login{
+    display: flex;
+    gap: 50px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.363) 1px 1px 1px 1px;
+    width: 170px;
+    height: 70px;
+    border-radius: 10px;
+   
+}#Button_return .login:hover{
+    background-color: rgba(141, 141, 141, 0.685);
+    margin-left: 1%;
+    border-radius: 10px;
+}
+
+
+
+/*Configuração especial do botão submit*/
+#part3_div #Button_next button{
+
+    width: 200px;
+    height: 70px;
+   
+}
+
+
+/*Formulario configs gerais*/
+.form_div #flex_nav{
+    display: flex;
+}
+.form_div #icon{
+    width: 60px;
+    height: 59px;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+.form_div{
+    margin-left: 20%;
+    width: 100%;
+    margin-bottom: 50PX;
+}
+.form_div input{
+    width: 500px;
+    height: 55px;
+    padding-left: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.192) 1px 1px 1px 1px;
+ 
+  
+}.form_div input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.form_div P{
+    margin-bottom: 1%;
+}#icon img{
+   
+   width: 45px;
+
+}
+
+
+/*Lado esquerdo da page*/
+#right a{
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+}
+
+.right_top{
+    
+    width: 70%;
+    text-align: left;
+    margin-left: 40px;
+    color: rgb(168, 168, 168);
+    margin-top: 50px;
+    font-size: 30px;
+    
+    
+}.right_top:hover{
+    color: rgb(255, 255, 255);
+}
+.right_main{
+    font-size: 15px;
+    width: 70%;
+    text-align: left;
+    margin-left: 40px;
+    color: rgb(168, 168, 168);
+    margin-top: 70px;
+    
+}.right_main:hover{
+    color: rgb(255, 255, 255);
+}
+#Button_page{
+    width: 50%;
+    display: flex;
+    margin-left: 40px;
+    color: rgb(168, 168, 168);
+    margin-top: 50px;
+    border: rgb(168, 168, 168) solid 3px;
+    padding-left: 10PX;
+    cursor: pointer;
+}#Button_page:hover{
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 4px solid;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="left">
+      
+        <div class="LOG"> <H1>CRIE SUA CONTA</H1>  </div>
+     
+        
+        
+        
+        <form method="post" action="cadastro.php" >
+         
+            <div id="part1_div">
+                        <div class="form_div">
+                        
+                            <label for="nometxt"><p></p></label>
+                           <div id="flex_nav"><div id="icon"><img src="../img/man.png"alt=""></div><input type="text" name="nometxt" id="nometxt" placeholder="Nome completo..."></div> 
+
+                        </div>
+
+                        <div class="form_div">
+                        
+                            <label for="emailtxt"><p></p></label>
+                            <div id="flex_nav"><div id="icon"><img src="../img/email (1).png" alt=""></div><input type="email" name="emailtxt" id="emailtxt" placeholder="Endereço de email..."></div> 
+
+                        </div>
+
+                        <div class="form_div">
+                        
+                            <label for="teletxt"><p></p></label>
+                            <div id="flex_nav"><div id="icon"><img src="../img/phone.png" alt=""></div><input type="tel" name="teletxt" id="teletxt"  placeholder="Número de telefone..."></div> 
+
+                        </div>
+
+                        <div id="Button_next" onclick="next1()">
+                                <div class="login"> 
+                                     <H4>AVANÇAR</H4>
+                                        <p><img src="../img/seta.png" alt=""></p>
+                                </div>
+                        </div>
+             </div>
+
+
+
+
+
+
+             <div id="part2_div">
+                <div class="form_div">
+                
+                    <label for="nome_paitxt"><p></p></label>
+                   <div id="flex_nav"><div id="icon"><img src="../img/dad.png" alt=""></div><input type="name" name="nome_paitxt" id="nome_paitxt"placeholder="Nome do Pai..."></div> 
+
+                </div>
+
+                <div class="form_div">
+                
+                    <label for="nome_maetxt"><p></p></label>
+                    <div id="flex_nav"><div id="icon"><img src="../img/woman.png" alt=""></div><input type="name" name="nome_maetxt" id="nome_maetxt" placeholder="Nome da mãe..."></div> 
+
+                </div>
+
+                <div class="form_div">
+                
+                    <label for="data_nasctxt"><p></p></label>
+                    <div id="flex_nav"><div id="icon"> <img src="../img/calendar.png" alt=""></div><input type="date" name="data_nasctxt" id="data_nasctxt" placeholder="Data nascimento..."></div> 
+
+                </div>
+
+                <DIV id="buttons">
+                    <div id="Button_return" onclick="return1()">
+                            <div class="login"> 
+                                <p> <img src="../img/seta-esquerda.png" alt=""> </p>
+                                <H4>VOLTAR</H4>
+                                    
+                            </div>
+                    </div>
+
+                    <div id="Button_next" onclick="next2()">
+                            <div class="login"> 
+                                <H4>AVANÇAR</H4>
+                                    <p><img src="../img/seta.png" alt=""></p>
+                            </div>
+                    </div>
+                </DIV>
+         </div>
+
+
+
+
+
+
+         <div id="part3_div">
+            <div class="form_div">
+            
+                <label for="Entradas"><p></p></label>
+               <div id="flex_nav"><div id="icon"></div><input type="text" name="entradastxt" id="entradastxt" placeholder="Entradas mensal (opcional)..."></div> 
+
+            </div>
+
+            <div class="form_div">
+            
+                <label for="saidas"><p></p></label>
+                <div id="flex_nav"><div id="icon"></div><input type="text" name="saidastxt" id="saidastxt"placeholder="Saídas mensais (opcional)..."></div> 
+
+            </div>
+
+            <div class="form_div">
+            
+                <label for="Perfil"><p></p></label>
+                <div id="flex_nav"><div id="icon"></div><input type="text" name="perfiltxt" id="perfiltxt" placeholder="Perfil de investidor (opcional)..."></div> 
+
+            </div>
+
+            <DIV id="buttons">
+                <div id="Button_return" onclick="return2()">
+                        <div class="login"> 
+                            <p> <img src="../img/seta-esquerda.png" alt=""> </p>
+                            <H4>VOLTAR</H4>
+                                
+                        </div>
+                </div>
+
+                <div id="Button_next">
+                        
+                            <button type="submit">CADASTRAR</button>
+                        
+                </div>
+            </DIV>
+     </div>
+
+
+
+        </form>
+
+    </section>
+
+
+    <section id="right">
+        <div class="right_top">
+           <h1> Ainda em dúvida?</h1>
+        </div>
+
+        <div class="right_main">
+             <p>Somos um empresa inovadora, com propostas inovadoras<br>pensadas especificamente para o grupo jovem que deseja<br>entrar no mercado financeiro de forma <strong>simplificada e com pouco capital.</strong></p>
+        </div>
+
+        <a href="../Code/index.html"> <div id="Button_page">
+            <div class="login"> 
+                <H4>PÁGINA PRINCIPAL</H4>
+            </div></a>
+    </div>
+     
+    </section>
+
+    <script src="register.js"></script>
+</body>
+</html>
